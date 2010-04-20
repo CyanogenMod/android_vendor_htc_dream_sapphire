@@ -31,7 +31,7 @@ ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/fstab | $(ACP)
 	$(transform-prebuilt-to-target)
     
-file := $(TARGET_RECOVERY_ROOT_OUT)/system/etc/fstab
+file := $(TARGET_OUT)/etc/fstab
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/fstab | $(ACP)
 	$(transform-prebuilt-to-target)
