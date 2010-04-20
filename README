@@ -1,0 +1,5 @@
+This is an unofficial vendor setup for the Dream and Sapphire devices.
+
+It was pieced together by Cyanogen. A shipping device is required to pull
+the proprietary files needed to build the system (via adb).  Run the
+"extract-files.sh" script before building.
