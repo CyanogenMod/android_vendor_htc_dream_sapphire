@@ -77,6 +77,11 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := trout-keypad-qwertz.kcm
 include $(BUILD_KEY_CHAR_MAP)
 
+file := $(TARGET_OUT)/build.trout.prop
+ALL_PREBUILT += $(file)
+$(file) : $(LOCAL_PATH)/build.trout.prop | $(ACP)
+	$(transform-prebuilt-to-target)
+
 file := $(TARGET_OUT_KEYLAYOUT)/sapphire-keypad.kl
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/sapphire-keypad.kl | $(ACP)
@@ -90,6 +95,11 @@ $(file) : $(LOCAL_PATH)/init.sapphire.rc | $(ACP)
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := sapphire-keypad.kcm
 include $(BUILD_KEY_CHAR_MAP)
+
+file := $(TARGET_OUT)/build.sapphire.prop
+ALL_PREBUILT += $(file)
+$(file) : $(LOCAL_PATH)/build.sapphire.prop | $(ACP)
+	$(transform-prebuilt-to-target)
 
 file := $(TARGET_OUT)/etc/firmware/brf6300.bin
 ALL_PREBUILT += $(file)

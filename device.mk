@@ -27,3 +27,5 @@ include frameworks/base/data/sounds/AudioPackage4.mk
 # This is the list of locales included in AOSP builds
 PRODUCT_LOCALES := en_US en_GB fr_FR it_IT de_DE es_ES
 
+# Don't add product info to the default build.prop
+PRODUCT_INFO_PREBUILT := true

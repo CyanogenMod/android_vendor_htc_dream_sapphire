@@ -1,0 +1,8 @@
+ro.product.model=HTC Dream
+ro.product.brand=tmobile
+ro.product.name=kila
+ro.product.device=dream
+ro.product.board=trout
+# ro.build.product is obsolete; use ro.product.device
+ro.build.product=dream
+
