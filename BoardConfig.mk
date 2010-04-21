@@ -37,8 +37,6 @@ TARGET_HARDWARE_3D := false
 
 BOARD_GPS_LIBRARIES := libgps librpc
 
-BOARD_VENDOR_USE_AKMD := true
-
 USE_PV_WINDOWS_MEDIA := false
 
 BOARD_BOOTIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x00280000)

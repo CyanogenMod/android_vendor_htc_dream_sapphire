@@ -252,6 +252,7 @@ include $(BUILD_PREBUILT)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libGLES_qcom.so:system/lib/egl/libGLES_qcom.so \
     $(LOCAL_PATH)/proprietary/libspeech.so:system/lib/libspeech.so \
+    $(LOCAL_PATH)/proprietary/akmd:system/bin/akmd \
     frameworks/base/data/etc/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml \
     frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/base/data/etc/android.hardware.touchscreen.multitouch.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.xml
