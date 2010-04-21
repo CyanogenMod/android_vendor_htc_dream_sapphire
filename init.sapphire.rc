@@ -38,7 +38,7 @@ service akmd /system/bin/akmd
     group compass misc input
 
 service wlan_loader /system/bin/wlan_loader \
-    -f /system/etc/wifi/Fw1251r1c.bin -e /proc/calibration \
+    -f /system/etc/firmware/Fw1251r1c.bin -e /proc/calibration \
     -i /system/etc/wifi/tiwlan.ini
     disabled
     oneshot
@@ -56,7 +56,7 @@ service dhcpcd /system/bin/dhcpcd -BKL tiwlan0
     oneshot
 
 service hciattach /system/bin/hciattach \
-    -n -s 115200 /dev/ttyHS0 texas 4000000 flow
+    -n -s 115200 /dev/ttyHS0 texasalt 4000000 flow
     user bluetooth
     group bluetooth net_bt_admin
     disabled
