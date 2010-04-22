@@ -21,6 +21,11 @@ ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/proprietary/libhtc_acoustic.so | $(ACP)
 	$(transform-prebuilt-to-target)
 
+file := $(TARGET_OUT)/lib/libaudioeq.so
+ALL_PREBUILT += $(file)
+$(file) : $(LOCAL_PATH)/proprietary/libaudioeq.so | $(ACP)
+	$(transform-prebuilt-to-target)
+
 file := $(TARGET_OUT_KEYLAYOUT)/h2w_headset.kl
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/h2w_headset.kl | $(ACP)
