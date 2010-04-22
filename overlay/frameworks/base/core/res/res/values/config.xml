@@ -243,6 +243,8 @@
     <bool name="config_filterTouchEvents">true</bool>
     
     <!-- Component name of the default wallpaper. This will be ImageWallpaper if not 
-         specified -->
+         specified 
     <string name="default_wallpaper_component">com.android.wallpaper/.nexus.NexusWallpaper</string>
+    -->
+
 </resources>
