@@ -8,7 +8,6 @@ TARGET_CPU_ABI := armeabi
 TARGET_ARCH_VARIANT := armv5te
 TARGET_KERNEL_CONFIG := cyanogen_msm_defconfig
 TARGET_KERNEL_DIR := kernel-msm
-TARGET_NO_BUILD_WIFI := true
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := sapphire
 TARGET_OTA_ASSERT_DEVICE := trout,sapphire
@@ -33,7 +32,6 @@ BOARD_USES_QCOM_LIBS := true
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 msmsdcc_sdioirq=1 wire.search_count=5
 
 BOARD_HAVE_BLUETOOTH := true
-BOARD_HAVE_BLUETOOTH_BCM := true
 
 TARGET_HARDWARE_3D := false
 
