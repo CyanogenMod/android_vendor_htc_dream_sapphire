@@ -14,7 +14,6 @@ adb pull /system/etc/AudioPreProcess.csv proprietary/AudioPreProcess.csv
 adb pull /system/lib/egl/libGLES_qcom.so proprietary/libGLES_qcom.so
 
 adb pull /system/lib/libaudioeq.so proprietary/libaudioeq.so
-adb pull /system/lib/libcamera.so proprietary/libcamera.so
 adb pull /system/lib/libgps.so proprietary/libgps.so
 adb pull /system/lib/libhtc_acoustic.so proprietary/libhtc_acoustic.so
 adb pull /system/lib/libhtc_ril.so proprietary/libhtc_ril.so
