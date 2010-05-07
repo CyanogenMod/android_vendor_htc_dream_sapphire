@@ -14,8 +14,8 @@ wifi.interface=tiwlan0
 wifi.supplicant_scan_interval=15
 
 # RIL settings
-ro.ril.gprsclass=12
-ro.ril.hsxpa=2
+ro.ril.gprsclass=10
+ro.ril.hsxpa=1
 
 # Media settings
 ro.media.enc.file.format       = 3gp,mp4
