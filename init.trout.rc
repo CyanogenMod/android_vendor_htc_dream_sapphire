@@ -32,11 +32,6 @@ on boot
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
     chmod 0660                /sys/class/rfkill/rfkill0/state
 
-    # performance tweaks for flash
-    write /sys/block/mtdblock3/bdi/read_ahead_kb 4
-    write /sys/block/mtdblock4/bdi/read_ahead_kb 4
-    write /sys/block/mtdblock5/bdi/read_ahead_kb 4
-
     # Power Management
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 245760
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 528000
