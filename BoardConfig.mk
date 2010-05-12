@@ -30,7 +30,7 @@ BOARD_USES_OLD_CAMERA_HACK := true
 BOARD_USES_QCOM_LIBS := true
 BOARD_GL_TEX_POW2_DIMENSION_REQUIRED := true
 BOARD_NO_GL2 := true
-BOARD_KERNEL_CMDLINE := no_console_suspend=1 msmsdcc_sdioirq=1 wire.search_count=5
+BOARD_KERNEL_CMDLINE := no_console_suspend=1
 
 BOARD_HAVE_BLUETOOTH := true
 
