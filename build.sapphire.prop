@@ -5,3 +5,4 @@ ro.product.device=sapphire
 ro.product.board=sapphire
 # ro.build.product is obsolete; use ro.product.device
 ro.build.product=sapphire
+ro.audiopa=sapphire

@@ -126,11 +126,28 @@ LOCAL_MODULE := AudioPreProcess.csv
 LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
+# If using the modified htc_acoustic library, we can load
+# AudioPara files based on the system property ro.audiopa
+#
+ifeq ($(WITH_HTCACOUSTIC_HACK),)
 include $(CLEAR_VARS)
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE := AudioPara4.csv
 LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
+else
+include $(CLEAR_VARS)
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE := AudioPara_sapphire.csv
+LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE := AudioPara_trout.csv
+LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
+include $(BUILD_PREBUILT)
+endif # WITH_HTCACOUSTIC_HACK
 
 include $(CLEAR_VARS)
 LOCAL_MODULE_CLASS := ETC
@@ -153,14 +170,6 @@ LOCAL_MODULE_TAGS := user
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(local_target_dir)
 LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := wlan.ko
-LOCAL_MODULE_TAGS := user
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT)/lib/modules
-LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)

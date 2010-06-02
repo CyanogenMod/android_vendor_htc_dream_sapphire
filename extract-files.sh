@@ -10,6 +10,8 @@ adb pull /system/etc/firmware/brf6300.bin proprietary/brf6300.bin
 adb pull /system/etc/AudioPara4.csv proprietary/AudioPara4.csv
 adb pull /system/etc/AudioFilter.csv proprietary/AudioFilter.csv
 adb pull /system/etc/AudioPreProcess.csv proprietary/AudioPreProcess.csv
+adb pull /system/etc/AudioPara_sapphire.csv proprietary/AudioPara_sapphire.csv
+adb pull /system/etc/AudioPara_dream.csv proprietary/AudioPara_dream.csv
 
 adb pull /system/lib/egl/libGLES_qcom.so proprietary/libGLES_qcom.so
 
