@@ -144,7 +144,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE := AudioPara_trout.csv
+LOCAL_MODULE := AudioPara_dream.csv
 LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 endif # WITH_HTCACOUSTIC_HACK
