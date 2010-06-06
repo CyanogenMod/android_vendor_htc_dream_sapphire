@@ -38,13 +38,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.gmsversion=2.1_r1 \
     ro.config.sync=yes \
     dalvik.vm.stack-trace-file=/data/anr/traces.txt
+    ro.media.dec.aud.wma.enabled=1 \
+    ro.media.dec.vid.wmv.enabled=1
 
-ifeq ($(WITH_WINDOWS_MEDIA),true)
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.media.dec.aud.wma.enabled=1 \
-        ro.media.dec.vid.wmv.enabled=1
-else
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.media.dec.aud.wma.enabled=0 \
-        ro.media.dec.vid.wmv.enabled=0
-endif
