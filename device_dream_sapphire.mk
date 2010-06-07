@@ -37,7 +37,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     ro.com.google.gmsversion=2.1_r1 \
     ro.config.sync=yes \
-    dalvik.vm.stack-trace-file=/data/anr/traces.txt
+    dalvik.vm.stack-trace-file=/data/anr/traces.txt \
     ro.media.dec.aud.wma.enabled=1 \
     ro.media.dec.vid.wmv.enabled=1
 
