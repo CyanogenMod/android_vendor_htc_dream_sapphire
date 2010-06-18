@@ -126,8 +126,7 @@ LOCAL_MODULE := AudioPreProcess.csv
 LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
-# If using the modified htc_acoustic library, we can load
-# AudioPara files based on the system property ro.audiopa
+# Installer will setup a symlink based on board type if set
 #
 ifeq ($(WITH_HTCACOUSTIC_HACK),)
 include $(CLEAR_VARS)

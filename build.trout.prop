@@ -5,7 +5,6 @@ ro.product.device=dream
 ro.product.board=trout
 # ro.build.product is obsolete; use ro.product.device
 ro.build.product=dream
-ro.audiopa=dream
 
 # Don't put dexfiles in /cache on trout
 dalvik.vm.dexopt-data-only=1
