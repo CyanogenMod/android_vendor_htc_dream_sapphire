@@ -40,6 +40,8 @@ BOARD_GPS_LIBRARIES := libgps librpc
 
 USE_PV_WINDOWS_MEDIA := false
 
+BOARD_NO_PV_AUTHOR_CLOCK := true
+
 BOARD_BOOTIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x00280000)
 BOARD_RECOVERYIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x00500000)
 BOARD_SYSTEMIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x04380000)
